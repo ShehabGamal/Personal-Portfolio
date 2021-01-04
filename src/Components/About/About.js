@@ -53,7 +53,7 @@ const About = () => {
         Be a Part of Solid Organization ``
         <br />
         <br />
-        Contact Information
+        Contact Information :
         <br />
         shehab.gamal333@gmail.com
         <br />
