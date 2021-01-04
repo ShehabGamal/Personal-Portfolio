@@ -5,45 +5,26 @@ import { BrowserRouter, Route } from "react-router-dom";
 import Home from "./Components/Home/Home.js";
 import About from "./Components/About/About.js";
 import styled from "styled-components";
-import img from "./Components/Casual.png";
-const Wrapper = styled.div`
-  background: ${(props) => props.theme.background};
-  height: 100vh;
+
+const BasicHeader = styled.header`
   display: flex;
+  margin: 0 auto;
+  height: 80px;
   justify-content: center;
-  align-items: center;
-  overflow: hidden;
+  margin-bottom: 80px;
 `;
-const Container = styled.div`
-  background: ${(props) => props.theme.extraColor};
-  height: 70vh;
-  padding-top: 100px;
-  padding-left: 50px;
-  padding-right: 50px;
-  width: 60%;
-  margin: 10% auto;
-`;
-const Image = styled.img`
-  border: 2px solid white;
-  border-radius: 50%;
-  width: 20%;
-  height: 40%;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-`;
+
 function App() {
   return (
-    <Wrapper>
-      <Container>
-        <Image src={img} alt="" />
+    <body>
+      <BasicHeader>
         <BrowserRouter>
           <Navbar />
-          <Route exact path="/Home" component={Home} />
-          <Route path="/About" component={About} />
         </BrowserRouter>
-      </Container>
-    </Wrapper>
+      </BasicHeader>
+      <About />
+      <Home />
+    </body>
   );
 }
 
