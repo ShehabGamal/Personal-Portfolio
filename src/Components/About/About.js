@@ -42,11 +42,13 @@ const OutsideLinks = styled.a`
   text-decoration: none;
   color: ${(props) => props.theme.extraColor};
 `;
+const OutsideLinks1 = styled(OutsideLinks)`
+  margin-left: 20px;
+`;
 const About = () => {
   return (
     <BasicDiv id="About">
       <Image src={img} alt="" />
-
       <Intro>
         `` Hello from My Portfolio, My Name Is Shehab Gamal. I am Highly
         Motivated Front-End Web-Developer Who Wants To Work on Huge Projects &
@@ -63,10 +65,9 @@ const About = () => {
         >
           LinkedIn
         </OutsideLinks>
-        -----
-        <OutsideLinks href="https://github.com/ShehabGamal" target="_Blank">
+        <OutsideLinks1 href="https://github.com/ShehabGamal" target="_Blank">
           GitHub
-        </OutsideLinks>
+        </OutsideLinks1>
       </Intro>
     </BasicDiv>
   );
