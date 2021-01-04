@@ -26,53 +26,48 @@ const Image = styled.img`
 `;
 const Intro = styled.p`
   display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 30px;
-  margin-left: 30px;
-  margin-bottom: 25px;
-  margin-right: 25px;
+  justify-content: flexstart;
+  font-size: 33px;
+  margin-left: 25px;
   width: 100%;
   line-height: 1.6;
   height: 100%;
   padding: 10px;
   font-familiy: sans-serif, Helvatica, Verdana;
+  float: left;
+  flex-wrap: wrap;
 `;
 const OutsideLinks = styled.a`
   display: flex;
   text-decoration: none;
   color: ${(props) => props.theme.extraColor};
-  margin-left: 20px;
-`;
-const ContactInfo = styled(Intro)`
-  font-size: 15px;
 `;
 const About = () => {
   return (
-    <BasicDiv>
+    <BasicDiv id="About">
       <Image src={img} alt="" />
+
       <Intro>
         `` Hello from My Portfolio, My Name Is Shehab Gamal. I am Highly
         Motivated Front-End Web-Developer Who Wants To Work on Huge Projects &
         Be a Part of Solid Organization ``
         <br />
         <br />
-      </Intro>
-      <ContactInfo>
-        Contact-Info
+        Contact Information
         <br />
         shehab.gamal333@gmail.com
         <br />
-      </ContactInfo>
-      <OutsideLinks
-        href="https://www.linkedin.com/in/shehab-el-deen-gamal-773010130/"
-        target="_Blank"
-      >
-        LinkedIn
-      </OutsideLinks>
-      <OutsideLinks href="https://github.com/ShehabGamal" target="_Blank">
-        GitHub
-      </OutsideLinks>
+        <OutsideLinks
+          href="https://www.linkedin.com/in/shehab-el-deen-gamal-773010130/"
+          target="_Blank"
+        >
+          LinkedIn
+        </OutsideLinks>
+        -----
+        <OutsideLinks href="https://github.com/ShehabGamal" target="_Blank">
+          GitHub
+        </OutsideLinks>
+      </Intro>
     </BasicDiv>
   );
 };
