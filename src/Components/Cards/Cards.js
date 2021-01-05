@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import img1 from "../../Components/Image/to-do-list.PNG";
 
 const BasicDiv = styled.div`
   display: flex;
