@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import img1 from "../../Components/Image/to-do-list.PNG";
 
 const BasicDiv = styled.div`
   display: flex;
@@ -11,26 +12,22 @@ const BasicDiv = styled.div`
   border: 5px solid blue;
   padding: 25px;
 `;
-const CardBasicDiv = styled.div`
-  display: flex;
-  border: 5px solid blue;
-  margin: 0 auto;
-  padding: 10px;
+const FlipCard = styled.div`
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
   perspective: 1000px;
-  &:hover {
-    transform: rotateY(180deg);
-    background: red;
-  }
 `;
 const FlipCardInner = styled.div`
   position: relative;
   width: 100%;
   height: 100%;
   text-align: center;
-  transform: rotateY(180deg);
   transition: transform 0.8s;
   transform-style: preserve-3d;
 `;
+
 const FlipCardFront = styled.div`
   position: absolute;
   width: 100%;
@@ -45,18 +42,18 @@ const FlipCardBack = styled.div`
   height: 100%;
   backface-visibility: hidden;
   background-color: dodgerblue;
-  color: black;
+  color: white;
   transform: rotateY(180deg);
 `;
 const Cards = () => {
   return (
     <BasicDiv>
-      <CardBasicDiv>
+      <FlipCard>
         <FlipCardInner>
-          <FlipCardFront>A7a</FlipCardFront>
+          <FlipCardFront>a7a</FlipCardFront>
           <FlipCardBack>Dal3ha</FlipCardBack>
         </FlipCardInner>
-      </CardBasicDiv>
+      </FlipCard>
     </BasicDiv>
   );
 };
