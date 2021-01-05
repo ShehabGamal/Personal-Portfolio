@@ -7,14 +7,22 @@ const BasicDiv = styled.div`
   margin-right: auto;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+`;
+
+const BasicH1 = styled.h1`
+  display: flex;
+  font-size: 80px;
+  font-familiy: sans-serif, Helvatica, Verdana;
+  margin-right: auto;
+  margin-left: auto;
 `;
 
 const Home = () => {
   return (
     <BasicDiv>
-      <p>
-        Hello from Home My Name is Shehab I love playing Chess and eating kebab
-      </p>
+      <BasicH1 id="Portfolio"> Projects </BasicH1>
     </BasicDiv>
   );
 };
