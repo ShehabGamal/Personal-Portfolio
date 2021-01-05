@@ -57,8 +57,6 @@ const Cards = () => {
           <FlipCardBack>Dal3ha</FlipCardBack>
         </FlipCardInner>
       </CardBasicDiv>
-      <CardBasicDiv> White </CardBasicDiv>
-      <CardBasicDiv> Yellow </CardBasicDiv>
     </BasicDiv>
   );
 };
