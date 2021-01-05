@@ -26,6 +26,9 @@ const FlipCardInner = styled.div`
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
+  ${FlipCard}:hover & {
+    transform: rotateY(180deg);
+  }
 `;
 
 const FlipCardFront = styled.div`
