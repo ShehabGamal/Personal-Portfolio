@@ -44,9 +44,7 @@ const FlipCardBack = styled.div`
   height: 100%;
   backface-visibility: hidden;
   background-color: ${(props) => props.theme.background};
-  color: white;
   transform: rotateY(180deg);
-  padding: 50px;
 `;
 const Image = styled.img`
   width: 100%;
@@ -114,7 +112,6 @@ const Cards = () => {
               Enter Your Pokemon Name & Reveal It's Status
               <br />
               <br />
-              <br />
               <ExternalLink
                 href="https://github.com/ShehabGamal/Pokemon"
                 target="_Blank"
@@ -138,10 +135,8 @@ const Cards = () => {
           </FlipCardFront>
           <FlipCardBack>
             <Span>
-              The Weather App Allows Users To Inquire
-              <br />
-              About Temprature For Any City
-              <br />
+              The Weather App Allows Users To Inquire About Temprature For Any
+              City
               <br />
               <br />
               <ExternalLink
