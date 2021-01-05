@@ -19,6 +19,7 @@ const CardBasicDiv = styled.div`
   perspective: 1000px;
   &:hover {
     transform: rotateY(180deg);
+    background: red;
   }
 `;
 const FlipCardInner = styled.div`
