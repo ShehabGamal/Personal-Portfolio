@@ -16,7 +16,7 @@ const BasicH1 = styled.h1`
   font-familiy: sans-serif, Helvetica, Verdana;
   margin-right: auto;
   margin-left: auto;
-  color: ${(props) => props.theme.secondaryColor};
+  color: ${(props) => props.theme.background};
 `;
 
 const Home = () => {

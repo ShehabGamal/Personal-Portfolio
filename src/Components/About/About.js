@@ -9,14 +9,15 @@ const BasicDiv = styled.div`
   margin-right: auto;
   justify-content: center;
   align-items: center;
-  border-bottom: 5px solid #360a14;
+  border-bottom: 5px solid #66fcf1;
   padding: 20px 50px 20px 50px;
   height: 100%;
   margin-top: 80px;
   over-flow: hidden;
+  color: ${(props) => props.theme.foreground};
 `;
 const Image = styled.img`
-  border-bottom: 3px solid #dc493a;
+  border-bottom: 3px solid #66fcf1;
   width: 20%;
   height: 20%;
   display: flex;

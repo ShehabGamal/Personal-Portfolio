@@ -16,6 +16,7 @@ const BasicHeader = styled.header`
   justify-content: center;
   align-items: center;
   margin-bottom: 50px;
+  background: transparent;
 `;
 
 function App() {

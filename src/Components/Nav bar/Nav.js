@@ -9,7 +9,7 @@ const BasicNavLink = styled.a`
   &:hover {
     background: ${(props) => props.theme.foreground};
     color: ${(props) => props.theme.extraColor};
-    border: 2px solid #dc493a;
+    border: 3px solid #45a29e;
   }
   margin: 10px 20px 10px 40px;
   padding: 10px;

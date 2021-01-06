@@ -42,7 +42,7 @@ const FlipCardBack = styled.div`
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  background-color: ${(props) => props.theme.background};
+  background-color: ${(props) => props.theme.foreground};
   transform: rotateY(180deg);
 `;
 const Image = styled.img`
@@ -64,8 +64,14 @@ const Span = styled.span`
 `;
 const ExternalLink = styled.a`
   text-decoration: none;
-  color: ${(props) => props.theme.extraColor};
   margin: 0 auto;
+  padding: 5px;
+  color: ${(props) => props.theme.mainColor};
+  &:hover {
+    color: ${(props) => props.theme.extraColor};
+    background: ${(props) => props.theme.secondaryColor};
+    border: 3px solid #45a29e;
+  }
 `;
 
 const Cards = () => {
