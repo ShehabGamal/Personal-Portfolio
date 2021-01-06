@@ -38,14 +38,7 @@ const Intro = styled.p`
   float: left;
   flex-wrap: wrap;
 `;
-const OutsideLinks = styled.a`
-  display: flex;
-  text-decoration: none;
-  color: ${(props) => props.theme.extraColor};
-`;
-const OutsideLinks1 = styled(OutsideLinks)`
-  margin-left: 20px;
-`;
+
 const About = () => {
   return (
     <BasicDiv id="About">
@@ -60,15 +53,7 @@ const About = () => {
         <br />
         shehab.gamal333@gmail.com
         <br />
-        <OutsideLinks
-          href="https://www.linkedin.com/in/shehab-el-deen-gamal-773010130/"
-          target="_Blank"
-        >
-          LinkedIn
-        </OutsideLinks>
-        <OutsideLinks1 href="https://github.com/ShehabGamal" target="_Blank">
-          GitHub
-        </OutsideLinks1>
+        +201284704762
       </Intro>
     </BasicDiv>
   );

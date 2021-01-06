@@ -20,8 +20,15 @@ const Navbar = () => {
     <div className="navbar">
       <div className="container">
         <ul>
-          <BasicNavLink href="#Portfolio">Projects</BasicNavLink>
-          <BasicNavLink href="#About">About</BasicNavLink>
+          <BasicNavLink href="https://github.com/ShehabGamal" target="_Blank">
+            GitHub
+          </BasicNavLink>
+          <BasicNavLink
+            href="https://app.netlify.com/teams/shehabgamal/overview"
+            target="_Blank"
+          >
+            Netlify
+          </BasicNavLink>
         </ul>
       </div>
     </div>
