@@ -8,13 +8,13 @@ const BasicDiv = styled.div`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 100px;
+  margin-top: 50px;
 `;
 
 const BasicH1 = styled.h1`
   display: flex;
   font-size: 80px;
-  font-familiy: sans-serif, Helvatica, Verdana;
+  font-familiy: sans-serif, Helvetica, Verdana;
   margin-right: auto;
   margin-left: auto;
   color: ${(props) => props.theme.secondaryColor};

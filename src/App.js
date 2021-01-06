@@ -8,6 +8,8 @@ import styled from "styled-components";
 
 const BasicHeader = styled.header`
   display: flex;
+  position: fixed;
+  top: 0;
   margin: 0 auto;
   height: 80px;
   width: 100%;

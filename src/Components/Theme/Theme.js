@@ -1,9 +1,9 @@
 const theme = {
-  mainColor: "#121420",
-  secondaryColor: "#360A14",
-  foreground: "#CDC5B4",
-  background: "#F8E5EE",
-  extraColor: "#DC493A",
+  mainColor: "#0B0C10",
+  secondaryColor: "#1F2833",
+  foreground: "#C5C6C7",
+  background: "#66FCF1",
+  extraColor: "#45A29E",
 };
 
 export default theme;

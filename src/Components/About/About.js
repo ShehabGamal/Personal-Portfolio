@@ -12,6 +12,7 @@ const BasicDiv = styled.div`
   border-bottom: 5px solid #360a14;
   padding: 20px 50px 20px 50px;
   height: 100%;
+  margin-top: 80px;
   over-flow: hidden;
 `;
 const Image = styled.img`
