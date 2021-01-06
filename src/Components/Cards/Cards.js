@@ -9,13 +9,13 @@ const BasicDiv = styled.div`
   flex-wrap: wrap;
   margin-right: auto;
   margin-left: auto;
-  width: 60%;
+  width: 80%;
   padding: 25px;
 `;
 const FlipCard = styled.div`
   background-color: transparent;
   width: 300px;
-  height: 200px;
+  height: 300px;
   perspective: 1000px;
   margin: 0 auto;
 `;
