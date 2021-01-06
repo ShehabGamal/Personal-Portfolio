@@ -9,7 +9,6 @@ const BasicDiv = styled.div`
   flex-wrap: wrap;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 80px;
   width: 60%;
   padding: 25px;
 `;
