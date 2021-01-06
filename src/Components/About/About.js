@@ -44,8 +44,8 @@ const About = () => {
     <BasicDiv id="About">
       <Image src={img} alt="" />
       <Intro>
-        `` Hello from My Portfolio, My Name Is Shehab Gamal. I am Highly
-        Motivated Front-End Web-Developer Who Wants To Work on Huge Projects &
+        `` Hello From My Portfolio, My Name Is Shehab Gamal. I am Highly
+        Motivated Front-End Web-Developer Who Seeks To Work on Huge Projects &
         Be a Part of Solid Organization ``
         <br />
         <br />

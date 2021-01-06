@@ -80,7 +80,7 @@ const Cards = () => {
           <FlipCardBack>
             <Span>
               Simple To Do List to Handle <br />
-              Busy Day Work Pressure
+              Busy Day Work Flow
               <br />
               <br />
               <br />
@@ -107,7 +107,7 @@ const Cards = () => {
           </FlipCardFront>
           <FlipCardBack>
             <Span>
-              Explore The Your Pokemon
+              Explore Your Pokemon
               <br />
               Enter Your Pokemon Name & Reveal It's Status
               <br />
@@ -135,8 +135,8 @@ const Cards = () => {
           </FlipCardFront>
           <FlipCardBack>
             <Span>
-              The Weather App Allows Users To Inquire About Temprature For Any
-              City
+              The Weather App Allows Users To Inquire About Temprature
+              World-Wide
               <br />
               <br />
               <ExternalLink
