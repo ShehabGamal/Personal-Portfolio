@@ -8,7 +8,6 @@ const BasicDiv = styled.div`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 50px;
 `;
 
 const BasicH1 = styled.h1`
