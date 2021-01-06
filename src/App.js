@@ -16,7 +16,7 @@ const BasicHeader = styled.header`
   justify-content: center;
   align-items: center;
   margin-bottom: 50px;
-  background: ${(props) => props.theme.mainColor};
+  background: ${(props) => props.theme.secondaryColor};
 `;
 
 function App() {
