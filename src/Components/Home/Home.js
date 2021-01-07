@@ -22,7 +22,7 @@ const BasicH1 = styled.h1`
 const Home = () => {
   return (
     <BasicDiv>
-      <BasicH1 id="Portfolio"> Projects </BasicH1>
+      <BasicH1 id="Projects"> Projects </BasicH1>
     </BasicDiv>
   );
 };

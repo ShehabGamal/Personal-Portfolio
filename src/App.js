@@ -13,9 +13,8 @@ const BasicHeader = styled.header`
   margin: 0 auto;
   height: 80px;
   width: 100%;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 50px;
+  justify-content: flex-end;
+  padding: 10px;
   background: ${(props) => props.theme.secondaryColor};
 `;
 

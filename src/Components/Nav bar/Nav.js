@@ -13,6 +13,7 @@ const BasicNavLink = styled.a`
   }
   margin: 10px 20px 10px 40px;
   padding: 10px;
+  margin-left: auto;
 `;
 
 const Navbar = () => {
@@ -20,15 +21,9 @@ const Navbar = () => {
     <div className="navbar">
       <div className="container">
         <ul>
-          <BasicNavLink href="https://github.com/ShehabGamal" target="_Blank">
-            GitHub
-          </BasicNavLink>
-          <BasicNavLink
-            href="https://app.netlify.com/teams/shehabgamal/overview"
-            target="_Blank"
-          >
-            Netlify
-          </BasicNavLink>
+          <BasicNavLink href="#Projects">Projects</BasicNavLink>
+          <BasicNavLink href="#About">About</BasicNavLink>
+          <BasicNavLink href="#ContactMe">Contact Me</BasicNavLink>
         </ul>
       </div>
     </div>
