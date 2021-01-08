@@ -4,14 +4,15 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { SiGmail, SiNetlify } from "react-icons/si";
 
-const BasicDiv = styled.footer`
+const BasicDiv = styled.div`
   display: flex;
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 20vh;
+  height: 100vh;
+  background: ${(props) => props.theme.foreground};
 `;
 
 const BasicDivChild = styled.div`
@@ -20,18 +21,18 @@ const BasicDivChild = styled.div`
   margin-right: auto;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 50%;
   flex-direction: row;
 `;
 const ExternalLinks = styled.a`
   padding: 10px;
   margin-right: auto;
   margin-left: auto;
-  color: ${(props) => props.theme.foreground};
+  color: ${(props) => props.theme.mainColor};
   text-decoration: none;
   &:hover {
     color: ${(props) => props.theme.extraColor};
-    background: ${(props) => props.theme.foreground};
+    background: ${(props) => props.theme.mainColor};
     border: 3px solid #45a29e;
   }
   font-size: 30px;
@@ -44,11 +45,21 @@ const CustomParagraph = styled.p`
   font-weight: bold;
   margin-right: auto;
   margin-left: auto;
-  color: ${(props) => props.theme.foreground};
+  color: ${(props) => props.theme.mainColor};
+`;
+const CustomH1 = styled.h1`
+  display: flex;
+  font-size: 120px;
+  font-family: Futura;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  color: ${(props) => props.theme.extraColor};
 `;
 const ContactMe = () => {
   return (
     <BasicDiv id="ContactMe">
+      <CustomH1> Let's work together...</CustomH1>
       <BasicDivChild>
         <ExternalLinks href="https://github.com/ShehabGamal" target="_Blank">
           <FaGithub />

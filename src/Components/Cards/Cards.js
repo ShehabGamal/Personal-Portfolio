@@ -6,18 +6,32 @@ import img3 from "../../Components/Image/WeatherApp.PNG";
 
 const BasicDiv = styled.div`
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   margin-right: auto;
   margin-left: auto;
-  width: 80%;
-  padding: 25px;
-  height: 50vh;
-  border-bottom: 5px solid #66fcf1;
-  margin-top: 10vh;
+  background: ${(props) => props.theme.mainColor};
+  height: 100vh;
+  width: 100%;
+`;
+const BasicDivChild = styled(BasicDiv)`
+  margin-top: 5vh;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+`;
+const CustomH1 = styled.h1`
+  margin-top: 20vh;
+  display: flex;
+  font-size: 120px;
+  font-family: Futura;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  color: ${(props) => props.theme.extraColor};
 `;
 const FlipCard = styled.div`
   background-color: transparent;
-  width: 300px;
+  width: 500px;
   height: 300px;
   perspective: 1000px;
   margin: 0 auto;
@@ -41,6 +55,8 @@ const FlipCardFront = styled.div`
   backface-visibility: hidden;
 `;
 const FlipCardBack = styled.div`
+  display: flex;
+  flex-direction: column;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -52,18 +68,24 @@ const Image = styled.img`
   width: 100%;
   height: 100%;
 `;
+const CardH1 = styled(CustomH1)`
+  margin-top: 25px;
+  color: ${(props) => props.theme.mainColor};
+  font-size: 35px;
+`;
 const Span = styled.span`
   display: flex;
+  flex-direction: column;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 20px;
   font-size: 20px;
   font-family: souvenir;
   justify-content: center;
   align-items: center;
-  padding: 25px;
-  flex-wrap: wrap;
   color: ${(props) => props.theme.mainColor};
+`;
+const LinkSpan = styled(Span)`
+  flex-direction: row;
 `;
 const ExternalLink = styled.a`
   text-decoration: none;
@@ -81,90 +103,99 @@ const ExternalLink = styled.a`
 
 const Cards = () => {
   return (
-    <BasicDiv>
-      <FlipCard>
-        <FlipCardInner>
-          <FlipCardFront>
-            <Image src={img1} />
-          </FlipCardFront>
-          <FlipCardBack>
-            <Span>
-              Simple To Do List to Handle <br />
-              Busy Day Work Flow
-              <br />
-              <br />
-              <br />
-              <ExternalLink
-                href="https://github.com/ShehabGamal/to-do-list"
-                target="_Blank"
-              >
-                GitHub
-              </ExternalLink>
-              <ExternalLink
-                href="https://goofy-almeida-26da4b.netlify.app/"
-                target="_Blank"
-              >
-                Netlify
-              </ExternalLink>
-            </Span>
-          </FlipCardBack>
-        </FlipCardInner>
-      </FlipCard>
-      <FlipCard>
-        <FlipCardInner>
-          <FlipCardFront>
-            <Image src={img2} />
-          </FlipCardFront>
-          <FlipCardBack>
-            <Span>
-              Explore Your Pokemon
-              <br />
-              Enter Your Pokemon Name & Reveal It's Status
-              <br />
-              <br />
-              <ExternalLink
-                href="https://github.com/ShehabGamal/Pokemon"
-                target="_Blank"
-              >
-                GitHub
-              </ExternalLink>
-              <ExternalLink
-                href="https://relaxed-torvalds-3cd3c7.netlify.app/"
-                target="_Blank"
-              >
-                Netlify
-              </ExternalLink>
-            </Span>
-          </FlipCardBack>
-        </FlipCardInner>
-      </FlipCard>
-      <FlipCard>
-        <FlipCardInner>
-          <FlipCardFront>
-            <Image src={img3} />
-          </FlipCardFront>
-          <FlipCardBack>
-            <Span>
-              The Weather App Allows Users To Inquire About Temprature
-              World-Wide
-              <br />
-              <br />
-              <ExternalLink
-                href="https://github.com/ShehabGamal/Weather-App"
-                target="_Blank"
-              >
-                GitHub
-              </ExternalLink>
-              <ExternalLink
-                href="https://eager-joliot-0ecef8.netlify.app/"
-                target="_Blank"
-              >
-                Netlify
-              </ExternalLink>
-            </Span>
-          </FlipCardBack>
-        </FlipCardInner>
-      </FlipCard>
+    <BasicDiv id="Projects">
+      <CustomH1>Projects</CustomH1>
+      <BasicDivChild>
+        <FlipCard>
+          <FlipCardInner>
+            <FlipCardFront>
+              <Image src={img1} />
+            </FlipCardFront>
+            <FlipCardBack>
+              <CardH1>Todo List</CardH1>
+              <Span>
+                Generic Solution <br /> To Handle Busy Day Work Flow
+                <br />
+                <br />
+                <LinkSpan>
+                  <ExternalLink
+                    href="https://github.com/ShehabGamal/to-do-list"
+                    target="_Blank"
+                  >
+                    GitHub
+                  </ExternalLink>
+                  <ExternalLink
+                    href="https://goofy-almeida-26da4b.netlify.app/"
+                    target="_Blank"
+                  >
+                    Netlify
+                  </ExternalLink>
+                </LinkSpan>
+              </Span>
+            </FlipCardBack>
+          </FlipCardInner>
+        </FlipCard>
+        <FlipCard>
+          <FlipCardInner>
+            <FlipCardFront>
+              <Image src={img2} />
+            </FlipCardFront>
+            <FlipCardBack>
+              <CardH1>Pokemon App</CardH1>
+              <Span>
+                Explore Your Pokemon
+                <br />
+                Enter Your Pokemon Name & Reveal It's Status
+                <br />
+                <br />
+                <LinkSpan>
+                  <ExternalLink
+                    href="https://github.com/ShehabGamal/Pokemon"
+                    target="_Blank"
+                  >
+                    GitHub
+                  </ExternalLink>
+                  <ExternalLink
+                    href="https://relaxed-torvalds-3cd3c7.netlify.app/"
+                    target="_Blank"
+                  >
+                    Netlify
+                  </ExternalLink>
+                </LinkSpan>
+              </Span>
+            </FlipCardBack>
+          </FlipCardInner>
+        </FlipCard>
+        <FlipCard>
+          <FlipCardInner>
+            <FlipCardFront>
+              <Image src={img3} />
+            </FlipCardFront>
+            <FlipCardBack>
+              <CardH1>Weather App</CardH1>
+              <Span>
+                Traditional Solution To Inquire About Temprature World-Wide
+                <br />
+                <br />
+                <LinkSpan>
+                  <ExternalLink
+                    href="https://github.com/ShehabGamal/Weather-App"
+                    target="_Blank"
+                  >
+                    GitHub
+                  </ExternalLink>
+                  <ExternalLink
+                    href="https://eager-joliot-0ecef8.netlify.app/"
+                    target="_Blank"
+                  >
+                    Netlify
+                  </ExternalLink>
+                </LinkSpan>
+              </Span>
+            </FlipCardBack>
+          </FlipCardInner>
+        </FlipCard>
+      </BasicDivChild>
     </BasicDiv>
   );
 };
