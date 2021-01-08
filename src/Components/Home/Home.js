@@ -12,7 +12,7 @@ const BasicDiv = styled.div`
 
 const BasicH1 = styled.h1`
   display: flex;
-  font-size: 80px;
+  font-size: 120px;
   font-familiy: sans-serif, Helvetica, Verdana;
   margin-right: auto;
   margin-left: auto;
@@ -21,8 +21,8 @@ const BasicH1 = styled.h1`
 
 const Home = () => {
   return (
-    <BasicDiv>
-      <BasicH1 id="Projects"> Projects </BasicH1>
+    <BasicDiv id="Projects">
+      <BasicH1> Projects </BasicH1>
     </BasicDiv>
   );
 };

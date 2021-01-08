@@ -11,6 +11,9 @@ const BasicDiv = styled.div`
   margin-left: auto;
   width: 80%;
   padding: 25px;
+  height: 50vh;
+  border-bottom: 5px solid #66fcf1;
+  margin-top: 10vh;
 `;
 const FlipCard = styled.div`
   background-color: transparent;

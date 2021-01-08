@@ -21,8 +21,8 @@ const Navbar = () => {
     <div className="navbar">
       <div className="container">
         <ul>
-          <BasicNavLink href="#Projects">Projects</BasicNavLink>
           <BasicNavLink href="#About">About</BasicNavLink>
+          <BasicNavLink href="#Projects">Projects</BasicNavLink>
           <BasicNavLink href="#ContactMe">Contact Me</BasicNavLink>
         </ul>
       </div>
