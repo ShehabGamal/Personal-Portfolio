@@ -35,7 +35,7 @@ const Intro = styled.p`
   line-height: 1.6;
   height: 100%;
   padding: 10px;
-  font-familiy: sans-serif, Helvatica, Verdana;
+  font-familiy: souvenir;
   flex-wrap: wrap;
   margin-top: 10vh;
 `;

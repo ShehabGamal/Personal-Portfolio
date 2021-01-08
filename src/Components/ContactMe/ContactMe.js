@@ -24,8 +24,7 @@ const BasicDivChild = styled.div`
   flex-direction: row;
 `;
 const ExternalLinks = styled.a`
-  font-size: 30px;
-  font-familiy: sans-serif, Helvetica, Verdana;
+  padding: 10px;
   margin-right: auto;
   margin-left: auto;
   color: ${(props) => props.theme.foreground};
@@ -35,10 +34,14 @@ const ExternalLinks = styled.a`
     background: ${(props) => props.theme.foreground};
     border: 3px solid #45a29e;
   }
+  font-size: 30px;
+  font-familiy: futura;
+  font-weight: bold;
 `;
 const CustomParagraph = styled.p`
   font-size: 30px;
-  font-familiy: sans-serif, Helvetica, Verdana;
+  font-familiy: futura;
+  font-weight: bold;
   margin-right: auto;
   margin-left: auto;
   color: ${(props) => props.theme.foreground};
@@ -60,7 +63,7 @@ const ContactMe = () => {
         </ExternalLinks>
         <CustomParagraph>
           <SiGmail />
-          shehab.gamal333@gmail.com
+          &nbsp; shehab.gamal333@gmail.com
         </CustomParagraph>
         <ExternalLinks
           href="https://www.linkedin.com/in/shehab-el-deen-gamal-773010130/"

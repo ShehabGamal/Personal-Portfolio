@@ -13,7 +13,8 @@ const BasicDiv = styled.div`
 const BasicH1 = styled.h1`
   display: flex;
   font-size: 120px;
-  font-familiy: sans-serif, Helvetica, Verdana;
+  font-familiy: futura;
+  font-weight: bold;
   margin-right: auto;
   margin-left: auto;
   color: ${(props) => props.theme.background};

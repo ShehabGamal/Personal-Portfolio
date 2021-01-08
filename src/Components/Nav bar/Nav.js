@@ -4,7 +4,8 @@ import styled from "styled-components";
 const BasicNavLink = styled.a`
   text-decoration: none;
   color: ${(props) => props.theme.foreground};
-  font-family: sans-serif, Helvatica, Verdana;
+  font-family: futura;
+  font-weight: bold;
   font-size: 30px;
   &:hover {
     background: ${(props) => props.theme.foreground};

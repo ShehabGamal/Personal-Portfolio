@@ -58,7 +58,7 @@ const Span = styled.span`
   margin-left: auto;
   margin-top: 20px;
   font-size: 20px;
-  font-family: sans-serif, Helvatica, Verdana;
+  font-family: souvenir;
   justify-content: center;
   align-items: center;
   padding: 25px;
@@ -67,6 +67,8 @@ const Span = styled.span`
 `;
 const ExternalLink = styled.a`
   text-decoration: none;
+  font-family: futura;
+  font-weight: bold;
   margin: 0 auto;
   padding: 5px;
   color: ${(props) => props.theme.mainColor};
