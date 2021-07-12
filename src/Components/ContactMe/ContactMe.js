@@ -65,13 +65,6 @@ const ContactMe = () => {
           <FaGithub />
           GitHub
         </ExternalLinks>
-        <ExternalLinks
-          href="https://app.netlify.com/teams/shehabgamal/overview"
-          target="_Blank"
-        >
-          <SiNetlify />
-          Netlify
-        </ExternalLinks>
         <CustomParagraph>
           <SiGmail />
           &nbsp; shehab.gamal333@gmail.com
