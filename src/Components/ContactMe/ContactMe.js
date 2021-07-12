@@ -36,21 +36,21 @@ const ExternalLinks = styled.a`
     border: 3px solid #45a29e;
   }
   font-size: 30px;
-  font-familiy: futura;
+  font-familiy: Montserrat, sans-serif;
   font-weight: bold;
 `;
 const CustomParagraph = styled.p`
   font-size: 30px;
-  font-familiy: futura;
-  font-weight: bold;
+  font-familiy: Montserrat, sans-serif;
   margin-right: auto;
   margin-left: auto;
   color: ${(props) => props.theme.mainColor};
+  font-weight: bold;
 `;
 const CustomH1 = styled.h1`
   display: flex;
   font-size: 120px;
-  font-family: Futura;
+  font-family: Montserrat, sans-serif;
   font-weight: bold;
   margin-left: auto;
   margin-right: auto;

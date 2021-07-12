@@ -23,7 +23,7 @@ const CustomH1 = styled.h1`
   margin-top: 20vh;
   display: flex;
   font-size: 120px;
-  font-family: Futura;
+  font-family: Montserrat, sans-serif;
   font-weight: bold;
   margin-left: auto;
   margin-right: auto;
@@ -79,7 +79,7 @@ const Span = styled.span`
   margin-right: auto;
   margin-left: auto;
   font-size: 20px;
-  font-family: souvenir;
+  font-family: Courier New;
   justify-content: center;
   align-items: center;
   color: ${(props) => props.theme.mainColor};
@@ -89,7 +89,7 @@ const LinkSpan = styled(Span)`
 `;
 const ExternalLink = styled.a`
   text-decoration: none;
-  font-family: futura;
+  font-family: Montserrat, sans-serif;
   font-weight: bold;
   margin: 0 auto;
   padding: 5px;
