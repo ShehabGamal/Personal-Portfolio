@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import { SiGmail, SiNetlify } from "react-icons/si";
+import { SiGmail } from "react-icons/si";
 
 const BasicDiv = styled.div`
   display: flex;
