@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
-
+import Footer from "../../Components/Footer/Footer.js";
 const BasicDiv = styled.div`
   display: flex;
   margin-left: auto;
@@ -54,6 +54,7 @@ const CustomH1 = styled.h1`
   font-weight: bold;
   margin-left: auto;
   margin-right: auto;
+  margin-top: auto;
   color: ${(props) => props.theme.extraColor};
 `;
 const ContactMe = () => {
@@ -77,6 +78,7 @@ const ContactMe = () => {
           Linkedin
         </ExternalLinks>
       </BasicDivChild>
+      <Footer />
     </BasicDiv>
   );
 };
