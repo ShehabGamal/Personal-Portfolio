@@ -21,7 +21,7 @@ const Image = styled.img`
   margin-left: auto;
   padding: 5px;
 `;
-const Intro = styled.p`
+const Welcome = styled.p`
   display: flex;
   justify-content: center;
   margin-left: auto;
@@ -39,7 +39,7 @@ const About = () => {
   return (
     <BasicDiv id="About">
       <Image src={img} alt="" />
-      <Intro>`` Simplicity is The Ultimate Sophistication ``</Intro>
+      <Welcome>Simplicity is The Ultimate Sophistication</Welcome>
     </BasicDiv>
   );
 };
