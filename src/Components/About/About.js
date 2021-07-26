@@ -5,12 +5,12 @@ import img from "../../Components/Image/Casual.png";
 const BasicDiv = styled.div`
   display: flex;
   flex-direction: column;
+  height: 100vh;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   background: ${(props) => props.theme.extraColor};
 `;
 const Image = styled.img`
