@@ -11,7 +11,7 @@ const BasicDiv = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
+  height: 100vh;
   background: ${(props) => props.theme.foreground};
 `;
 
@@ -21,7 +21,6 @@ const BasicDivChild = styled.div`
   margin-right: auto;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   width: 50%;
   flex-direction: row;
 `;
