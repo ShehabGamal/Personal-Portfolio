@@ -11,11 +11,10 @@ const BasicDiv = styled.div`
   margin-right: auto;
   justify-content: center;
   align-items: center;
-  background: ${(props) => props.theme.extraColor};
 `;
 const Image = styled.img`
-  border-bottom: 3px solid #0b0c10;
   width: 15%;
+  opacity: 0.6;
   height: 35%;
   display: flex;
   margin-right: auto;
@@ -40,11 +39,7 @@ const About = () => {
   return (
     <BasicDiv id="About">
       <Image src={img} alt="" />
-      <Intro>
-        `` Hello From My Portfolio, My Name Is Shehab Gamal. I am Highly
-        Motivated Front-End Web-Developer Who Seeks To Work on Huge Projects &
-        Be a Part of Solid Organization ``
-      </Intro>
+      <Intro>`` Simplicity is The Ultimate Sophistication ``</Intro>
     </BasicDiv>
   );
 };

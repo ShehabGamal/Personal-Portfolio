@@ -12,7 +12,7 @@ const BasicDiv = styled.div`
   align-items: center;
   flex-direction: column;
   height: 100vh;
-  background: ${(props) => props.theme.foreground};
+  background: ${(props) => props.theme.white};
 `;
 
 const BasicDivChild = styled.div`
@@ -31,7 +31,7 @@ const ExternalLinks = styled.a`
   color: ${(props) => props.theme.mainColor};
   text-decoration: none;
   &:hover {
-    color: ${(props) => props.theme.extraColor};
+    color: ${(props) => props.theme.white};
     background: ${(props) => props.theme.mainColor};
     border: 3px solid #45a29e;
   }
@@ -55,7 +55,7 @@ const CustomH1 = styled.h1`
   margin-left: auto;
   margin-right: auto;
   margin-top: auto;
-  color: ${(props) => props.theme.extraColor};
+  color: ${(props) => props.theme.black};
 `;
 const ContactMe = () => {
   return (
@@ -66,10 +66,6 @@ const ContactMe = () => {
           <FaGithub />
           GitHub
         </ExternalLinks>
-        <CustomParagraph>
-          <SiGmail />
-          &nbsp; shehab.gamal333@gmail.com
-        </CustomParagraph>
         <ExternalLinks
           href="https://www.linkedin.com/in/shehab-el-deen-gamal-773010130/"
           target="_Blank"
@@ -77,6 +73,10 @@ const ContactMe = () => {
           <FaLinkedin />
           Linkedin
         </ExternalLinks>
+        <CustomParagraph>
+          <SiGmail />
+          &nbsp; shehab.gamal333@gmail.com
+        </CustomParagraph>
       </BasicDivChild>
       <Footer />
     </BasicDiv>

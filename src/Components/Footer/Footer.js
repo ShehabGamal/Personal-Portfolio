@@ -26,7 +26,7 @@ const Holder = styled.div`
   color: black;
 `;
 <Footer>
-  <Holder>© Shehab Gamal 2020 All Rights Reserved</Holder>
+  <Holder></Holder>
 </Footer>;
 
 export default Footer;

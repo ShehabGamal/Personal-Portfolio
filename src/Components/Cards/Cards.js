@@ -9,7 +9,7 @@ const BasicDiv = styled.div`
   flex-direction: column;
   margin-right: auto;
   margin-left: auto;
-  background: ${(props) => props.theme.mainColor};
+  background: ${(props) => props.theme.black};
   height: 100vh;
   width: 100%;
 `;
@@ -27,7 +27,7 @@ const CustomH1 = styled.h1`
   font-weight: bold;
   margin-left: auto;
   margin-right: auto;
-  color: ${(props) => props.theme.extraColor};
+  color: ${(props) => props.theme.white};
 `;
 const FlipCard = styled.div`
   background-color: transparent;
@@ -61,7 +61,7 @@ const FlipCardBack = styled.div`
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  background-color: ${(props) => props.theme.foreground};
+  background-color: ${(props) => props.theme.mainColor};
   transform: rotateY(180deg);
 `;
 const Image = styled.img`
@@ -70,7 +70,8 @@ const Image = styled.img`
 `;
 const CardH1 = styled(CustomH1)`
   margin-top: 25px;
-  color: ${(props) => props.theme.mainColor};
+  color: ${(props) => props.theme.white};
+  opacity: 0.3;
   font-size: 35px;
 `;
 const Span = styled.span`
@@ -82,7 +83,7 @@ const Span = styled.span`
   font-family: Courier New;
   justify-content: center;
   align-items: center;
-  color: ${(props) => props.theme.mainColor};
+  color: ${(props) => props.theme.white};
 `;
 const LinkSpan = styled(Span)`
   flex-direction: row;
@@ -93,12 +94,13 @@ const ExternalLink = styled.a`
   font-weight: bold;
   margin: 0 auto;
   padding: 5px;
-  color: ${(props) => props.theme.mainColor};
+  color: ${(props) => props.theme.white};
   &:hover {
-    color: ${(props) => props.theme.extraColor};
-    background: ${(props) => props.theme.secondaryColor};
+    color: ${(props) => props.theme.white};
+    background: ${(props) => props.theme.black};
     border: 3px solid #45a29e;
   }
+  opacity: 0.6;
 `;
 
 const Cards = () => {

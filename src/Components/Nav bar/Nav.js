@@ -8,8 +8,8 @@ const BasicNavLink = styled.a`
   font-weight: bold;
   font-size: 30px;
   &:hover {
-    background: ${(props) => props.theme.foreground};
-    color: ${(props) => props.theme.extraColor};
+    background: ${(props) => props.theme.black};
+    color: ${(props) => props.theme.white};
     border: 3px solid #45a29e;
   }
   margin: 10px 20px 10px 40px;
@@ -24,6 +24,7 @@ const BasicHeader = styled.header`
   width: 100%;
   justify-content: flex-end;
   background: ${(props) => props.theme.secondaryColor};
+  opacity: 0.9;
   z-index: 9999;
 `;
 const Navbar = () => {
