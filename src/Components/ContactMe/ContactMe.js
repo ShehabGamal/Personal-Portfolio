@@ -32,7 +32,7 @@ const ExternalLinks = styled.a`
   text-decoration: none;
   &:hover {
     color: ${(props) => props.theme.white};
-    background: ${(props) => props.theme.mainColor};
+    background: ${(props) => props.theme.black};
     border: 3px solid #45a29e;
   }
   font-size: 30px;
