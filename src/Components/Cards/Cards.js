@@ -46,6 +46,8 @@ const FlipCardInner = styled.div`
   ${FlipCard}:hover & {
     transform: rotateY(180deg);
   }
+  box-shadow: 0 4px 8px 0 ${(props) => props.theme.white},
+    0 6px 20px 0 ${(props) => props.theme.extraColor};
 `;
 
 const FlipCardFront = styled.div`
