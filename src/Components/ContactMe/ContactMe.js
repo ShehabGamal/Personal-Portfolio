@@ -28,7 +28,7 @@ const ExternalLinks = styled.a`
   padding: 10px;
   margin-right: auto;
   margin-left: auto;
-  color: ${(props) => props.theme.mainColor};
+  color: ${(props) => props.theme.black};
   text-decoration: none;
   &:hover {
     color: ${(props) => props.theme.white};
