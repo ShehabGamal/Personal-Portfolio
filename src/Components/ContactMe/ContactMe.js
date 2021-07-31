@@ -12,7 +12,7 @@ const BasicDiv = styled.div`
   align-items: center;
   flex-direction: column;
   height: 100vh;
-  background: ${(props) => props.theme.white};
+  background: ${(props) => props.theme.pagebackground};
 `;
 
 const BasicDivChild = styled.div`
@@ -28,15 +28,15 @@ const ExternalLinks = styled.a`
   padding: 10px;
   margin-right: auto;
   margin-left: auto;
-  color: ${(props) => props.theme.black};
+  color: ${(props) => props.theme.fontcolor};
   text-decoration: none;
   &:hover {
-    color: ${(props) => props.theme.white};
-    background: ${(props) => props.theme.black};
-    border: 3px solid #45a29e;
+    color: ${(props) => props.theme.subtleshadow};
+    background: ${(props) => props.theme.borderonhover};
   }
   font-size: 30px;
   font-familiy: Montserrat, sans-serif;
+  border-radius: 10px;
   font-weight: bold;
 `;
 const CustomParagraph = styled.p`
@@ -44,7 +44,7 @@ const CustomParagraph = styled.p`
   font-familiy: Montserrat, sans-serif;
   margin-right: auto;
   margin-left: auto;
-  color: ${(props) => props.theme.mainColor};
+  color: ${(props) => props.theme.fontcolor};
   font-weight: bold;
 `;
 const CustomH1 = styled.h1`
@@ -55,7 +55,7 @@ const CustomH1 = styled.h1`
   margin-left: auto;
   margin-right: auto;
   margin-top: auto;
-  color: ${(props) => props.theme.black};
+  color: ${(props) => props.theme.fontcolor};
 `;
 const ContactMe = () => {
   return (

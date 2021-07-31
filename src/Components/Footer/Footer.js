@@ -10,7 +10,9 @@ const Footer = styled.div`
   bottom: 0;
   justify-content: center;
   align-items: center;
-  border-top: solid black 4px;
+  border-top-style:solid;
+  border-top-color:${(props) => props.theme.fontcolor}
+  border-top-width:3px;
   flex-direction: row;
 `;
 const Holder = styled.div`

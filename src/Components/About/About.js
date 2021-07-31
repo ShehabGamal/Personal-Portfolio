@@ -32,7 +32,7 @@ const Welcome = styled.p`
   font-familiy: Courier New;
   font-weight: 525;
   flex-wrap: wrap;
-  color: ${(props) => props.theme.mainColor};
+  color: ${(props) => props.theme.fontcolor};
 `;
 
 const About = () => {

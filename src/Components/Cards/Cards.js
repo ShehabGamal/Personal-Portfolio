@@ -9,7 +9,7 @@ const BasicDiv = styled.div`
   flex-direction: column;
   margin-right: auto;
   margin-left: auto;
-  background: ${(props) => props.theme.black};
+  background: ${(props) => props.theme.pagebackground};
   height: 100vh;
   width: 100%;
 `;
@@ -27,7 +27,7 @@ const CustomH1 = styled.h1`
   font-weight: bold;
   margin-left: auto;
   margin-right: auto;
-  color: ${(props) => props.theme.white};
+  color: ${(props) => props.theme.fontcolor};
 `;
 const FlipCard = styled.div`
   background-color: transparent;
@@ -35,6 +35,7 @@ const FlipCard = styled.div`
   height: 300px;
   perspective: 1000px;
   margin: 0 auto;
+  border-radius: 25px;
 `;
 const FlipCardInner = styled.div`
   position: relative;
@@ -46,8 +47,9 @@ const FlipCardInner = styled.div`
   ${FlipCard}:hover & {
     transform: rotateY(180deg);
   }
-  box-shadow: 0 4px 8px 0 ${(props) => props.theme.white},
-    0 6px 20px 0 ${(props) => props.theme.extraColor};
+  box-shadow: 0 4px 8px 0 ${(props) => props.theme.fontcolor},
+    0 6px 20px 0 ${(props) => props.theme.fontcolor};
+  border-radius: 25px;
 `;
 
 const FlipCardFront = styled.div`
@@ -55,6 +57,7 @@ const FlipCardFront = styled.div`
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
+  border-radius: 25px;
 `;
 const FlipCardBack = styled.div`
   display: flex;
@@ -63,16 +66,18 @@ const FlipCardBack = styled.div`
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  background-color: ${(props) => props.theme.mainColor};
+  background-color: ${(props) => props.theme.subtleshadow};
   transform: rotateY(180deg);
+  border-radius: 25px;
 `;
 const Image = styled.img`
   width: 100%;
   height: 100%;
+  border-radius: 25px;
 `;
 const CardH1 = styled(CustomH1)`
   margin-top: 25px;
-  color: ${(props) => props.theme.white};
+  color: ${(props) => props.theme.fontcolor};
   opacity: 0.3;
   font-size: 35px;
 `;
@@ -85,7 +90,7 @@ const Span = styled.span`
   font-family: Courier New;
   justify-content: center;
   align-items: center;
-  color: ${(props) => props.theme.white};
+  color: ${(props) => props.theme.fontcolor};
 `;
 const LinkSpan = styled(Span)`
   flex-direction: row;
@@ -96,11 +101,10 @@ const ExternalLink = styled.a`
   font-weight: bold;
   margin: 0 auto;
   padding: 5px;
-  color: ${(props) => props.theme.white};
+  color: ${(props) => props.theme.fontcolor};
   &:hover {
-    color: ${(props) => props.theme.white};
-    background: ${(props) => props.theme.black};
-    border: 3px solid #45a29e;
+    color: ${(props) => props.theme.subtleshadow};
+    background: ${(props) => props.theme.borderonhover};
   }
   opacity: 0.6;
 `;

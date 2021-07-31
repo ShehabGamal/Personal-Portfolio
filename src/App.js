@@ -5,7 +5,7 @@ import Cards from "./Components/Cards/Cards";
 import About from "./Components/About/About.js";
 import ContactMe from "./Components/ContactMe/ContactMe.js";
 
-function App() {
+function App(props) {
   return (
     <body>
       <Navbar />

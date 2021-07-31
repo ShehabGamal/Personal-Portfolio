@@ -2,15 +2,16 @@ import React from "react";
 import styled from "styled-components";
 
 const BasicNavLink = styled.a`
+  display: flex;
   text-decoration: none;
-  color: ${(props) => props.theme.black};
+  color: ${(props) => props.theme.fontcolor};
   font-family: Montserrat, sans-serif;
   font-weight: bold;
   font-size: 30px;
   &:hover {
-    background: ${(props) => props.theme.black};
-    color: ${(props) => props.theme.white};
-    border: 3px solid #45a29e;
+    background: ${(props) => props.theme.borderonhover};
+    color: ${(props) => props.theme.subtleshadow};
+    border-radius: 15px;
   }
   margin: 10px 20px 10px 40px;
   padding: 10px;
@@ -28,29 +29,32 @@ const BasicHeader = styled.header`
   margin: 0 auto;
 `;
 const ThemeButton = styled.button`
+  display: flex;
   text-decoration: none;
-  color: ${(props) => props.theme.black};
+  color: ${(props) => props.theme.fontcolor};
   font-family: Montserrat, sans-serif;
   font-weight: bold;
   background: none;
   font-size: 30px;
   &:hover {
-    background: ${(props) => props.theme.black};
-    border: 3px solid #45a29e;
-    color: ${(props) => props.theme.white};
+    background: ${(props) => props.theme.borderonhover};
+    color: ${(props) => props.theme.subtleshadow};
+    border-radius: 15px;
   }
   margin: 10px 20px 10px 40px;
   border: none;
   padding: 10px;
 `;
-
+const dilemma = () => {
+  return !dilemma;
+};
 const Navbar = () => {
   return (
     <BasicHeader>
       <BasicNavLink href="#About">About</BasicNavLink>
       <BasicNavLink href="#Projects">Projects</BasicNavLink>
       <BasicNavLink href="#ContactMe">Contact Me</BasicNavLink>
-      <ThemeButton>Theme</ThemeButton>
+      <ThemeButton onClick={dilemma}>Theme</ThemeButton>
     </BasicHeader>
   );
 };
