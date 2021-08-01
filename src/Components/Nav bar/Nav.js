@@ -28,7 +28,7 @@ const BasicHeader = styled.header`
   width: 100%;
   margin: 0 auto;
 `;
-const ThemeButton = styled.button`
+const ThemeDropdownMenu = styled.button`
   display: flex;
   text-decoration: none;
   color: ${(props) => props.theme.fontcolor};
@@ -45,16 +45,13 @@ const ThemeButton = styled.button`
   border: none;
   padding: 10px;
 `;
-const dilemma = () => {
-  return !dilemma;
-};
-const Navbar = () => {
+const Navbar = (props) => {
   return (
     <BasicHeader>
       <BasicNavLink href="#About">About</BasicNavLink>
       <BasicNavLink href="#Projects">Projects</BasicNavLink>
       <BasicNavLink href="#ContactMe">Contact Me</BasicNavLink>
-      <ThemeButton onClick={dilemma}>Theme</ThemeButton>
+      <ThemeDropdownMenu>Theme</ThemeDropdownMenu>
     </BasicHeader>
   );
 };
