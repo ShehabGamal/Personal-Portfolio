@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Dropdown from "../../Components/Dropdown Menu/Dropdown Menu.js";
 
 const BasicNavLink = styled.a`
   display: flex;
@@ -28,30 +29,14 @@ const BasicHeader = styled.header`
   width: 100%;
   margin: 0 auto;
 `;
-const ThemeDropdownMenu = styled.button`
-  display: flex;
-  text-decoration: none;
-  color: ${(props) => props.theme.fontcolor};
-  font-family: Montserrat, sans-serif;
-  font-weight: bold;
-  background: none;
-  font-size: 30px;
-  &:hover {
-    background: ${(props) => props.theme.borderonhover};
-    color: ${(props) => props.theme.subtleshadow};
-    border-radius: 15px;
-  }
-  margin: 10px 20px 10px 40px;
-  border: none;
-  padding: 10px;
-`;
+
 const Navbar = (props) => {
   return (
     <BasicHeader>
       <BasicNavLink href="#About">About</BasicNavLink>
       <BasicNavLink href="#Projects">Projects</BasicNavLink>
       <BasicNavLink href="#ContactMe">Contact Me</BasicNavLink>
-      <ThemeDropdownMenu>Theme</ThemeDropdownMenu>
+      <Dropdown>Theme</Dropdown>
     </BasicHeader>
   );
 };

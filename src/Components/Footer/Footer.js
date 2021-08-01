@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const Footer = styled.div`
+const Wrapper = styled.div`
   height: 4vh;
   width: 95%;
   display: flex;
@@ -25,10 +25,15 @@ const Holder = styled.div`
   margin: 0 auto;
   font-size: 20px;
   font-family: Courier New;
-  color: black;
+  color: ${(props) => props.theme.fontcolor};
+  font-weight: 700;
 `;
-<Footer>
-  <Holder></Holder>
-</Footer>;
+const Footer = () => {
+  return (
+    <Wrapper>
+      <Holder> Personal Portfolio © Shehab Gamal 2020</Holder>
+    </Wrapper>
+  );
+};
 
 export default Footer;
