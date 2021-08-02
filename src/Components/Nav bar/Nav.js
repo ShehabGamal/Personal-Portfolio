@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import ThemeSwitch from "../Theme Switch/Theme Switch.js";
 
 const BasicNavLink = styled.a`
   display: flex;
@@ -36,7 +35,6 @@ const Navbar = (props) => {
       <BasicNavLink href="#About">About</BasicNavLink>
       <BasicNavLink href="#Projects">Projects</BasicNavLink>
       <BasicNavLink href="#ContactMe">Contact Me</BasicNavLink>
-      <ThemeSwitch></ThemeSwitch>
     </BasicHeader>
   );
 };

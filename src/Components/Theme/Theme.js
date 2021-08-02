@@ -5,7 +5,7 @@ export const basic = {
   subtleshadow: "#fff",
   pagebackground: "#fff",
 };
-export const luxury = {
+export const premium = {
   borderonhover: "#6494",
   navbackground: "#3554",
   fontcolor: "#51923",
