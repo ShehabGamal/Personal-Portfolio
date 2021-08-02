@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Dropdown from "../../Components/Dropdown Menu/Dropdown Menu.js";
+import ThemeSwitch from "../Theme Switch/Theme Switch.js";
 
 const BasicNavLink = styled.a`
   display: flex;
@@ -36,7 +36,7 @@ const Navbar = (props) => {
       <BasicNavLink href="#About">About</BasicNavLink>
       <BasicNavLink href="#Projects">Projects</BasicNavLink>
       <BasicNavLink href="#ContactMe">Contact Me</BasicNavLink>
-      <Dropdown>Theme</Dropdown>
+      <ThemeSwitch>Theme</ThemeSwitch>
     </BasicHeader>
   );
 };
