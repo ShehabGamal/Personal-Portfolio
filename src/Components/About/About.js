@@ -11,6 +11,7 @@ const BasicDiv = styled.div`
   margin-right: auto;
   justify-content: center;
   align-items: center;
+  background: ${(props) => props.theme.pagebackground};
 `;
 const Image = styled.img`
   width: 15%;
