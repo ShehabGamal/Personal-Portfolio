@@ -36,7 +36,7 @@ const Navbar = (props) => {
       <BasicNavLink href="#About">About</BasicNavLink>
       <BasicNavLink href="#Projects">Projects</BasicNavLink>
       <BasicNavLink href="#ContactMe">Contact Me</BasicNavLink>
-      <ThemeSwitch>Theme</ThemeSwitch>
+      <ThemeSwitch></ThemeSwitch>
     </BasicHeader>
   );
 };
