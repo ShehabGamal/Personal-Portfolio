@@ -11,7 +11,7 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   border-top-style:solid;
-  border-top-color:${(props) => props.theme.fontcolor}
+  border-top-color:${(props) => props.theme.secondary}
   border-top-width:3px;
   flex-direction: row;
 `;
@@ -25,8 +25,9 @@ const Holder = styled.div`
   margin: 0 auto;
   font-size: 20px;
   font-family: Courier New;
-  color: ${(props) => props.theme.fontcolor};
+  color: ${(props) => props.theme.extra};
   font-weight: 700;
+  opacity: 0.8;
 `;
 const Footer = () => {
   return (

@@ -9,7 +9,7 @@ const BasicDiv = styled.div`
   flex-direction: column;
   margin-right: auto;
   margin-left: auto;
-  background: ${(props) => props.theme.pagebackground};
+  background: ${(props) => props.theme.primary};
   height: 100vh;
   width: 100%;
 `;
@@ -27,7 +27,8 @@ const CustomH1 = styled.h1`
   font-weight: bold;
   margin-left: auto;
   margin-right: auto;
-  color: ${(props) => props.theme.fontcolor};
+  color: ${(props) => props.theme.extra};
+  opacity: 0.8;
 `;
 const FlipCard = styled.div`
   background-color: transparent;
@@ -47,8 +48,8 @@ const FlipCardInner = styled.div`
   ${FlipCard}:hover & {
     transform: rotateY(180deg);
   }
-  box-shadow: 0 4px 8px 0 ${(props) => props.theme.fontcolor},
-    0 6px 20px 0 ${(props) => props.theme.fontcolor};
+  box-shadow: 0 4px 8px 0 ${(props) => props.theme.secondary},
+    0 6px 20px 0 ${(props) => props.theme.extra};
   border-radius: 25px;
 `;
 
@@ -66,7 +67,7 @@ const FlipCardBack = styled.div`
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  background-color: ${(props) => props.theme.subtleshadow};
+  background-color: ${(props) => props.theme.secondary};
   transform: rotateY(180deg);
   border-radius: 25px;
 `;
@@ -77,8 +78,7 @@ const Image = styled.img`
 `;
 const CardH1 = styled(CustomH1)`
   margin-top: 25px;
-  color: ${(props) => props.theme.fontcolor};
-  opacity: 0.3;
+  color: ${(props) => props.theme.extra};
   font-size: 35px;
 `;
 const Span = styled.span`
@@ -90,7 +90,7 @@ const Span = styled.span`
   font-family: Courier New;
   justify-content: center;
   align-items: center;
-  color: ${(props) => props.theme.fontcolor};
+  color: ${(props) => props.theme.primary};
 `;
 const LinkSpan = styled(Span)`
   flex-direction: row;
@@ -101,12 +101,12 @@ const ExternalLink = styled.a`
   font-weight: bold;
   margin: 0 auto;
   padding: 5px;
-  color: ${(props) => props.theme.fontcolor};
+  color: ${(props) => props.theme.extra};
   &:hover {
-    color: ${(props) => props.theme.subtleshadow};
-    background: ${(props) => props.theme.borderonhover};
+    color: ${(props) => props.theme.secondary};
+    background: ${(props) => props.theme.primary};
   }
-  opacity: 0.6;
+  opacity: 0.9;
 `;
 
 const Cards = () => {

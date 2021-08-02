@@ -11,7 +11,7 @@ const BasicDiv = styled.div`
   margin-right: auto;
   justify-content: center;
   align-items: center;
-  background: ${(props) => props.theme.pagebackground};
+  background: ${(props) => props.theme.primary};
 `;
 const Image = styled.img`
   width: 15%;
@@ -33,7 +33,7 @@ const Welcome = styled.p`
   font-familiy: Courier New;
   font-weight: 525;
   flex-wrap: wrap;
-  color: ${(props) => props.theme.fontcolor};
+  color: ${(props) => props.theme.extra};
 `;
 
 const About = () => {

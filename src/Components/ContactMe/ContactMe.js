@@ -12,7 +12,7 @@ const BasicDiv = styled.div`
   align-items: center;
   flex-direction: column;
   height: 100vh;
-  background: ${(props) => props.theme.pagebackground};
+  background: ${(props) => props.theme.primary};
 `;
 
 const BasicDivChild = styled.div`
@@ -28,11 +28,11 @@ const ExternalLinks = styled.a`
   padding: 10px;
   margin-right: auto;
   margin-left: auto;
-  color: ${(props) => props.theme.fontcolor};
+  color: ${(props) => props.theme.secondary};
   text-decoration: none;
   &:hover {
-    color: ${(props) => props.theme.subtleshadow};
-    background: ${(props) => props.theme.borderonhover};
+    color: ${(props) => props.theme.primary};
+    background: ${(props) => props.theme.secondary};
   }
   font-size: 30px;
   font-familiy: Montserrat, sans-serif;
@@ -44,7 +44,7 @@ const CustomParagraph = styled.p`
   font-familiy: Montserrat, sans-serif;
   margin-right: auto;
   margin-left: auto;
-  color: ${(props) => props.theme.fontcolor};
+  color: ${(props) => props.theme.secondary};
   font-weight: bold;
 `;
 const CustomH1 = styled.h1`
@@ -55,7 +55,8 @@ const CustomH1 = styled.h1`
   margin-left: auto;
   margin-right: auto;
   margin-top: auto;
-  color: ${(props) => props.theme.fontcolor};
+  color: ${(props) => props.theme.extra};
+  opacity: 0.8;
 `;
 const ContactMe = () => {
   return (

@@ -3,11 +3,11 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import { ThemeProvider } from "styled-components";
-import { basic, premium } from "./Components/Theme/Theme.js";
+import { calm } from "./Components/Theme/Theme.js";
 
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeProvider theme={premium}>
+    <ThemeProvider theme={calm}>
       <App />
     </ThemeProvider>
   </React.StrictMode>,
