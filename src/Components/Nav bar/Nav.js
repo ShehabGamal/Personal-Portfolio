@@ -22,7 +22,7 @@ const BasicHeader = styled.header`
   justify-content: flex-end;
   top: 0;
   display: flex;
-  background: ${(props) => props.theme.secondary};
+  background: ${(props) => props.theme.primary};
   position: fixed;
   height: 80px;
   width: 100%;
@@ -32,7 +32,7 @@ const BasicHeader = styled.header`
 const Navbar = (props) => {
   return (
     <BasicHeader>
-      <BasicNavLink href="#About">About</BasicNavLink>
+      <BasicNavLink href="#Home">Home</BasicNavLink>
       <BasicNavLink href="#Projects">Projects</BasicNavLink>
       <BasicNavLink href="#ContactMe">Contact Me</BasicNavLink>
     </BasicHeader>
