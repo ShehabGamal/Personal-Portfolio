@@ -25,7 +25,8 @@ const Objects = styled.div`
   background: linear-gradient(-45deg, #5f91ff, rgba(0, 0, 255, 0));
   border-radius: 999px;
   filter: drop-shadow(0 0 6px #699bff);
-  &:before && &:after {
+  &:before {
+    content: "";
     position: absolute;
     top: calc(50%-2px);
     right: 0;
@@ -36,7 +37,15 @@ const Objects = styled.div`
     animation: shining 3s ease-in-out infinite;
   }
   &:after {
-    transform: translateX(50%) rotateZ(45deg);
+    content: "";
+    position: absolute;
+    top: calc(50%-2px);
+    right: 0;
+    height: 4px;
+    background: linear-gradient(-45deg, rgba(0, 0, 255, 0), #5f91ff);
+    border-radius: 100%;
+    animation: shining 3s ease-in-out infinite;
+    transform: translateX(50%) rotateZ(-45deg);
   }
   @keyframes shining {
     0% {
