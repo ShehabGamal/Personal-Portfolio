@@ -42,7 +42,7 @@ const ExternalLinks = styled.a`
 `;
 const CustomParagraph = styled.p`
   font-size: 30px;
-  font-familiy: Montserrat, sans-serif;
+  font-family: Montserrat, sans-serif;
   margin-right: auto;
   margin-left: auto;
   color: ${(props) => props.theme.secondary};
