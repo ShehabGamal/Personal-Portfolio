@@ -144,7 +144,7 @@ const Welcome = styled.p`
   width: 80%;
   font-size: 43px;
   line-height: 1.6;
-  font-familiy: Courier New;
+  font-family: Courier New;
   font-weight: 525;
   flex-wrap: wrap;
   color: ${(props) => props.theme.extra};

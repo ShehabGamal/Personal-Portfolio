@@ -4,6 +4,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import Footer from "../../Components/Footer/Footer.js";
+
 const BasicDiv = styled.div`
   display: flex;
   margin-left: auto;
@@ -35,7 +36,7 @@ const ExternalLinks = styled.a`
     background: ${(props) => props.theme.secondary};
   }
   font-size: 30px;
-  font-familiy: Montserrat, sans-serif;
+  font-family: Montserrat, sans-serif;
   border-radius: 10px;
   font-weight: bold;
 `;

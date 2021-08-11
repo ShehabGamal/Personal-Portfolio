@@ -33,6 +33,7 @@ const Navbar = (props) => {
   return (
     <BasicHeader>
       <BasicNavLink href="#Home">Home</BasicNavLink>
+      <BasicNavLink href="#About">About</BasicNavLink>
       <BasicNavLink href="#Projects">Projects</BasicNavLink>
       <BasicNavLink href="#ContactMe">Contact Me</BasicNavLink>
     </BasicHeader>
