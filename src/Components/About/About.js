@@ -22,20 +22,19 @@ const CustomH1 = styled.h1`
   font-size: 120px;
   font-family: Montserrat, sans-serif;
   font-weight: bold;
-  margin-top:-10vh;
   margin-left:auto;
   margin-right: auto;
   color: ${(props) => props.theme.extra};
-  opacity: 0.8;
 `;
 const Paragraph= styled.p`
   width:85%;
-  font-size: 30px;
+  font-size: 35px;
   font-family: Courier New;
   margin-right: auto;
   margin-left: auto;
   color: ${(props) => props.theme.secondary};
-  font-weight: bold;
+  font-weight:450;
+  
 `;
 
 const About = ()=>{
@@ -44,10 +43,11 @@ const About = ()=>{
             <CustomH1>About</CustomH1>
             <BasicDivChild>
             <Paragraph>
-                My Name is Shehab Al Deen, I am Self-Taught Front-End Web Developer from Egypt.
-                Web Development is a Passion, Dedication and Commitment. Everything Started When My Brothers Convinced Me to
-                Start Coding, They Helped Me In Getting Study Material And Adding Finishing Touches to My React-Apps.
-                Now I am looking Enhance My Experience to Start My Career.  
+            My name is Shehab Al Deen Jamal, I am a self-taught front end web developer from Egypt.
+            Web development is a passion, dedication and commitment. 
+            Everything started when my brothers convinced me to start coding. 
+            They helped in getting study material and adding finishing touches to my React-Apps. 
+            I hope I can work with you or join your team in the future. 
             </Paragraph>
             </BasicDivChild>
         </BasicDiv>

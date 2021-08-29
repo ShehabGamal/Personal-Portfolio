@@ -57,7 +57,6 @@ const CustomH1 = styled.h1`
   margin-right: auto;
   margin-top: auto;
   color: ${(props) => props.theme.extra};
-  opacity: 0.8;
 `;
 const ContactMe = () => {
   return (

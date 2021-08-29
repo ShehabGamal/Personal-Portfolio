@@ -24,15 +24,14 @@ const Holder = styled.div`
   height: 100%;
   margin: 0 auto;
   font-size: 20px;
-  font-family: Courier New;
+  font-family: Montserrat, sans-serif;
   color: ${(props) => props.theme.extra};
-  font-weight: 700;
-  opacity: 0.8;
+
 `;
 const Footer = () => {
   return (
     <Wrapper>
-      <Holder> Personal Portfolio © Shehab Gamal 2020</Holder>
+      <Holder> © Shehab Gamal 2020. All Rights Reserved.</Holder>
     </Wrapper>
   );
 };

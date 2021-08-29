@@ -28,7 +28,6 @@ const CustomH1 = styled.h1`
   margin-left: auto;
   margin-right: auto;
   color: ${(props) => props.theme.extra};
-  opacity: 0.8;
 `;
 const FlipCard = styled.div`
   background-color: transparent;
@@ -48,8 +47,8 @@ const FlipCardInner = styled.div`
   ${FlipCard}:hover & {
     transform: rotateY(180deg);
   }
-  box-shadow: 0 4px 8px 0 ${(props) => props.theme.secondary},
-    0 6px 20px 0 ${(props) => props.theme.extra};
+  box-shadow: 0 4px 8px 0 ${(props) => props.theme.secondary2},
+    0 6px 20px 0 ${(props) => props.theme.secondary2};
   border-radius: 25px;
 `;
 
@@ -103,10 +102,8 @@ const ExternalLink = styled.a`
   padding: 5px;
   color: ${(props) => props.theme.extra};
   &:hover {
-    color: ${(props) => props.theme.secondary};
-    background: ${(props) => props.theme.primary};
+    color: ${(props) => props.theme.extra2};
   }
-  opacity: 0.9;
 `;
 
 const Cards = () => {

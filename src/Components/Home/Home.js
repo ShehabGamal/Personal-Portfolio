@@ -5,14 +5,14 @@ const BasicDivChild = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: radial-gradient(ellipse at bottom, #0d1e31, #111);
+  background: ${props=>props.theme.primary};
   height: 100vh;
   overflow: hidden;
 `;
 const Holder = styled.div`
   position: absolute;
   width: 100%;
-  height: 100;
+  height: 100%;
   transform: rotateZ(40deg);
 `;
 
@@ -145,7 +145,7 @@ const Welcome = styled.p`
   font-size: 43px;
   line-height: 1.6;
   font-family: Courier New;
-  font-weight: 525;
+  font-weight:550;
   flex-wrap: wrap;
   color: ${(props) => props.theme.extra};
 `;
