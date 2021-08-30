@@ -8,12 +8,18 @@ const BasicDivChild = styled.div`
   background: ${props=>props.theme.primary};
   height: 100vh;
   overflow: hidden;
+  @media screen and (max-width: 400px){
+    hieght:700px;
+  }
 `;
 const Holder = styled.div`
   position: absolute;
   width: 100%;
   height: 100%;
   transform: rotateZ(40deg);
+  @media screen and (max-width: 400px){
+    hieght:700px;
+  }
 `;
 
 const Objects = styled.div`
@@ -53,6 +59,7 @@ const Objects = styled.div`
     }
     50% {
       width: 30px;
+      }
     }
     100% {
       width: 0px;
@@ -84,6 +91,8 @@ const Objects = styled.div`
     top: calc(50% - 0px);
     left: calc(50% - 150px);
     animation-delay: 1.4s;
+    
+    }
   }
   &:nth-child(3)::before {
     animation-delay: 1.4s;
@@ -95,6 +104,8 @@ const Objects = styled.div`
     top: calc(50% - -50px);
     left: calc(50% - 200px);
     animation-delay: 1.6s;
+    
+    }
   }
   &:nth-child(4)::before {
     animation-delay: 1.6s;
@@ -106,6 +117,7 @@ const Objects = styled.div`
     top: calc(50% - -100px);
     left: calc(50% - 250px);
     animation-delay: 1.8s;
+  
   }
   &:nth-child(5)::before {
     animation-delay: 1.8s;
@@ -120,6 +132,7 @@ const Objects = styled.div`
     }
     30% {
       width: 100px;
+    
     }
     100% {
       width: 0;
@@ -131,6 +144,7 @@ const Objects = styled.div`
     }
     100% {
       transform: translateX(300px);
+    
     }
   }
 `;
@@ -148,6 +162,10 @@ const Welcome = styled.p`
   font-weight:550;
   flex-wrap: wrap;
   color: ${(props) => props.theme.extra};
+  @media screen and (max-width: 400px){
+    font-size:15px;
+    width:100%;
+  }
 `;
 
 const About = () => {

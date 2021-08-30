@@ -14,6 +14,11 @@ const BasicNavLink = styled.a`
   }
   margin: 10px 20px 10px 40px;
   padding: 10px;
+  @media screen and (max-width: 400px){
+    font-size:10px;
+    padding:2px;
+    margin: 5px 10px 5px 5px; 
+  }
 `;
 const BasicHeader = styled.header`
   z-index: 9999;
@@ -26,6 +31,11 @@ const BasicHeader = styled.header`
   height: 80px;
   width: 100%;
   margin: 0 auto;
+  @media screen and (max-width: 400px){
+  height:30px;
+  justify-content:center;
+    
+  }
 `;
 
 const Navbar = (props) => {

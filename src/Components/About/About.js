@@ -8,6 +8,9 @@ const BasicDiv = styled.div`
     justify-content:center;
     align-items:center;
     flex-direction:column;
+    @media screen and (max-width: 400px){
+      hieght:700px;
+    }
 `;
 
 const BasicDivChild = styled.div`
@@ -25,6 +28,9 @@ const CustomH1 = styled.h1`
   margin-left:auto;
   margin-right: auto;
   color: ${(props) => props.theme.extra};
+  @media screen and (max-width: 400px){
+    font-size:35px;
+  }
 `;
 const Paragraph= styled.p`
   width:85%;
@@ -34,6 +40,10 @@ const Paragraph= styled.p`
   margin-left: auto;
   color: ${(props) => props.theme.secondary};
   font-weight:450;
+  @media screen and (max-width: 400px){
+    font-size:10px;
+    width:80%;
+  }
   
 `;
 

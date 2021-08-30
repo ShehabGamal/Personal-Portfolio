@@ -26,6 +26,10 @@ const Holder = styled.div`
   font-size: 20px;
   font-family: Montserrat, sans-serif;
   color: ${(props) => props.theme.extra};
+  @media screen and (max-width: 400px){
+    font-size:10px;
+    width:70%;
+  }
 
 `;
 const Footer = () => {

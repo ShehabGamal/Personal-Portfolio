@@ -28,6 +28,9 @@ const CustomH1 = styled.h1`
   margin-left: auto;
   margin-right: auto;
   color: ${(props) => props.theme.extra};
+  @media screen and (max-width: 400px){
+    font-size:30px;
+  }
 `;
 const FlipCard = styled.div`
   background-color: transparent;
@@ -36,6 +39,10 @@ const FlipCard = styled.div`
   perspective: 1000px;
   margin: 0 auto;
   border-radius: 25px;
+  @media screen and (max-width: 400px){
+    width:100px ;
+    height:100px;
+  }
 `;
 const FlipCardInner = styled.div`
   position: relative;
@@ -50,6 +57,11 @@ const FlipCardInner = styled.div`
   box-shadow: 0 4px 8px 0 ${(props) => props.theme.secondary2},
     0 6px 20px 0 ${(props) => props.theme.secondary2};
   border-radius: 25px;
+  @media screen and (max-width: 400px){
+   box-shadow: 0 1.33px 2.67px 0 ${(props)=>props.theme.secodnary2},
+   0 2px 6.67px 0 ${(props)=>props.theme.secondary2};
+   border-radius:8.3px;
+  }
 `;
 
 const FlipCardFront = styled.div`
@@ -58,6 +70,9 @@ const FlipCardFront = styled.div`
   height: 100%;
   backface-visibility: hidden;
   border-radius: 25px;
+  @media screen and (max-width: 400px){
+   border-radius:8.3px;
+  }
 `;
 const FlipCardBack = styled.div`
   display: flex;
@@ -69,16 +84,26 @@ const FlipCardBack = styled.div`
   background-color: ${(props) => props.theme.secondary};
   transform: rotateY(180deg);
   border-radius: 25px;
+  @media screen and (max-width: 400px){
+    border-radius:8.3px;
+  }
 `;
 const Image = styled.img`
   width: 100%;
   height: 100%;
   border-radius: 25px;
+  @media screen and (max-width: 400px){
+    border-radius:8.3px;
+  }
 `;
 const CardH1 = styled(CustomH1)`
   margin-top: 25px;
   color: ${(props) => props.theme.extra};
   font-size: 35px;
+  @media screen and (max-width: 400px){
+    margin-top:8.3px;
+    font-size:11.67px
+  }
 `;
 const Span = styled.span`
   display: flex;
@@ -90,6 +115,9 @@ const Span = styled.span`
   justify-content: center;
   align-items: center;
   color: ${(props) => props.theme.primary};
+  @media screen and (max-width: 400px){
+    font-size:5px;
+  }
 `;
 const LinkSpan = styled(Span)`
   flex-direction: row;

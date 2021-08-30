@@ -32,13 +32,17 @@ const ExternalLinks = styled.a`
   color: ${(props) => props.theme.secondary};
   text-decoration: none;
   &:hover {
-    color: ${(props) => props.theme.primary};
+    color: ${(props) => props.theme.extra2};
     background: ${(props) => props.theme.secondary};
   }
   font-size: 30px;
   font-family: Montserrat, sans-serif;
   border-radius: 10px;
   font-weight: bold;
+  @media screen and (max-width: 400px){
+    font-size:15px;
+
+  }
 `;
 const CustomParagraph = styled.p`
   font-size: 30px;
@@ -47,6 +51,9 @@ const CustomParagraph = styled.p`
   margin-left: auto;
   color: ${(props) => props.theme.secondary};
   font-weight: bold;
+  @media screen and (max-width: 400px){
+    font-size:15px;
+  }
 `;
 const CustomH1 = styled.h1`
   display: flex;
@@ -57,6 +64,9 @@ const CustomH1 = styled.h1`
   margin-right: auto;
   margin-top: auto;
   color: ${(props) => props.theme.extra};
+  @media screen and (max-width: 400px){
+    font-size:35px;
+  }
 `;
 const ContactMe = () => {
   return (
