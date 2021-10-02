@@ -24,8 +24,8 @@ const BasicDivChild=styled.div`
 `;
 const Img = styled.img`
 display:flex;
-width:35%;
-height:35%;
+height:209px;
+width:209px;
 `;
 
 
@@ -51,7 +51,7 @@ const Home = () => {
   return (
     <BasicDiv id="Home">
     <BasicDivChild>
-    <Img src={figure}/>
+    <Img src={figure} alt="MyPersonalPhoto"/>
     <Welcome>Simplicity is The Ultimate Sophistication</Welcome>
     </BasicDivChild>
     </BasicDiv>

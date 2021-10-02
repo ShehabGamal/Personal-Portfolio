@@ -24,6 +24,7 @@ const Holder = styled.div`
   height: 100%;
   margin: 0 auto;
   font-size: 20px;
+  font-weight:bold;
   font-family: Montserrat, sans-serif;
   color: ${(props) => props.theme.extra};
   @media screen and (max-width: 400px){

@@ -142,7 +142,7 @@ const Cards = () => {
         <FlipCard>
           <FlipCardInner>
             <FlipCardFront>
-              <Image src={img1} />
+              <Image src={img1} alt="TodoListApp"/>
             </FlipCardFront>
             <FlipCardBack>
               <CardH1>Todo List</CardH1>
@@ -171,7 +171,7 @@ const Cards = () => {
         <FlipCard>
           <FlipCardInner>
             <FlipCardFront>
-              <Image src={img2} />
+              <Image src={img2} alt="PokemonApp" />
             </FlipCardFront>
             <FlipCardBack>
               <CardH1>Pokemon App</CardH1>
@@ -202,7 +202,7 @@ const Cards = () => {
         <FlipCard>
           <FlipCardInner>
             <FlipCardFront>
-              <Image src={img3} />
+              <Image src={img3} alt="WeatherApp"/>
             </FlipCardFront>
             <FlipCardBack>
               <CardH1>Weather App</CardH1>
