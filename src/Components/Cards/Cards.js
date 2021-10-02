@@ -155,13 +155,13 @@ const Cards = () => {
                     href="https://github.com/ShehabGamal/to-do-list"
                     target="_Blank"
                   >
-                    GitHub
+                    Code
                   </ExternalLink>
                   <ExternalLink
                     href="https://goofy-almeida-26da4b.netlify.app/"
                     target="_Blank"
                   >
-                    Netlify
+                    Live
                   </ExternalLink>
                 </LinkSpan>
               </Span>
@@ -186,13 +186,13 @@ const Cards = () => {
                     href="https://github.com/ShehabGamal/Pokemon"
                     target="_Blank"
                   >
-                    GitHub
+                    Code
                   </ExternalLink>
                   <ExternalLink
                     href="https://relaxed-torvalds-3cd3c7.netlify.app/"
                     target="_Blank"
                   >
-                    Netlify
+                    Live
                   </ExternalLink>
                 </LinkSpan>
               </Span>
@@ -215,13 +215,13 @@ const Cards = () => {
                     href="https://github.com/ShehabGamal/Weather-App"
                     target="_Blank"
                   >
-                    GitHub
+                    Code
                   </ExternalLink>
                   <ExternalLink
                     href="https://eager-joliot-0ecef8.netlify.app/"
                     target="_Blank"
                   >
-                    Netlify
+                    Live
                   </ExternalLink>
                 </LinkSpan>
               </Span>
